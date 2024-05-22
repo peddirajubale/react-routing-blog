@@ -1,11 +1,10 @@
-import { Link } from 'react-router-dom';
 import './index.css';
 
 const BlogItem = ({ blogListDetails }) => {
     const { title, imageUrl, avatarUrl, author, topic, id } = blogListDetails;
 
     return (
-            <Link to='/blogs'>
+
             <li className='list-items-container'>
                 <div className='item-container'>
                     <img src={imageUrl} className='img' alt={`item${id}`} />
@@ -19,7 +18,6 @@ const BlogItem = ({ blogListDetails }) => {
                     </div>
                 </div>
             </li>
-            </Link>
     );
 };
 
